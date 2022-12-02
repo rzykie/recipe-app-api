@@ -8,6 +8,7 @@ django = ">=3.2.4,<3.3"
 djangorestframework = "<3.13,>=3.12.4"
 flake8 = "*"
 black = "*"
+drf-spectacular = "==0.15.1"
 
 [dev-packages]
 
