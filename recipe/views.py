@@ -16,6 +16,23 @@ from drf_spectacular.utils import (
     OpenApiTypes,
 )
 
+
+@extend_schema_view(
+    list=extend_schema(
+        parameters=[
+            OpenApiParameter(
+                "tags",
+                OpenApiTypes.STR,
+                desciption="Comma separated list of IDS to filter",
+            ),
+            OpenApiParameter(
+                "ingredients",
+                OpenApiTypes.STR,
+                desciption="Comma separated list of ingredient IDS to filter",
+            )
+        ]
+    )
+)
 class RecipeViewSet(viewsets.ModelViewSet):
     """View for manage recipe APIs"""
 
