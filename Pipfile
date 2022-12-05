@@ -9,6 +9,7 @@ djangorestframework = "<3.13,>=3.12.4"
 flake8 = "*"
 black = "*"
 drf-spectacular = "==0.15.1"
+pillow = "==8.2.0"
 
 [dev-packages]
 
