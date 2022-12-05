@@ -23,12 +23,12 @@ from drf_spectacular.utils import (
             OpenApiParameter(
                 "tags",
                 OpenApiTypes.STR,
-                desciption="Comma separated list of IDS to filter",
+                description="Comma separated list of IDS to filter",
             ),
             OpenApiParameter(
                 "ingredients",
                 OpenApiTypes.STR,
-                desciption="Comma separated list of ingredient IDS to filter",
+                description="Comma separated list of ingredient IDS to filter",
             )
         ]
     )
