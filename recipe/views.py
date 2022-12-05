@@ -9,6 +9,12 @@ from rest_framework.permissions import IsAuthenticated
 from core.models import Recipe, Tag, Ingredient
 from recipe import serializers
 
+from drf_spectacular.utils import (
+    extend_schema_view,
+    extend_schema,
+    OpenApiParameter,
+    OpenApiTypes,
+)
 
 class RecipeViewSet(viewsets.ModelViewSet):
     """View for manage recipe APIs"""
